@@ -29,6 +29,43 @@
             border-radius: 10px;
             height: 98vh;
         }
+        .clica{
+            margin-top: 5px;
+            width: 200px;
+            height: 40px;
+            text-align: left;
+            background-color: black;
+            color: aliceblue;
+            border-radius: 5px 0px 0px 5px;
+        }
+        #tbm{
+            display: none;
+
+
+        }
+        #clic{
+            margin-top: 5px;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            background-color: black;
+            color: aliceblue;
+            border-radius: 0px 5px 5px 0px;
+            
+        }
+        .clica:hover{
+            background-color: #e7640d;
+        }
+
+        #clica{
+            height: 40px;
+            margin-top: 5px;
+        }
+        #clic:hover{
+            background-color: #ff0000;
+
+
+        }
     </style>
 </head>
 <body>
@@ -37,13 +74,25 @@
         <a href="index.html"><img src="imagens/Dragon-Ball-Logo.png" alt=""></a>
     </header>
     <menu>
-        <h2>Intrudução:</h2>
-        <ul>
-            <li>
-                <a style="text-decoration: none; color: #e7640d; font-size: 40px; background-color: #f20519;" href="index0.html">Guerreiro Z</a>
-            </li>
-        </ul>
+        <input class="clica" type="button" value="Introdução" onclick="clica()"><input id="clic" type="button" value="X" onclick="x()">
+            <ul id="tbm">
+                <li>
+                    <a style="text-decoration: none; color: #e7640d; font-size: 40px; background-color: #f20519;" href="index0.html">Guerreiro Z</a>
+                </li>
+            </ul>
     </menu>
 
+
+    <script>
+        function clica(){
+            var i = window.document.getElementById('tbm')
+            i.style.display=('block')
+        }
+        function x(){
+            var i = window.document.getElementById('tbm')
+            i.style.display=('none')
+
+        }
+    </script>
 </body>
 </html>
