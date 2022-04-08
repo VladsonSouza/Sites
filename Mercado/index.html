@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <title>Mercado</title>
+</head>
+<body>
+    <div id="cabeça">
+        <a id="logo" href="#"><img src="imagens/logo-sup.png" alt=""></a>
+        <div id="menu">
+            <button id="bnt" onclick="clica()">MENU</button><button id="seta" onclick="clica1()">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </button>
+            <div id="lista">
+                <ul id="hj">
+                    <li>oi</li>
+                    <li>oi</li>
+                    <li>oi</li>
+                    <li>oi</li>
+                    <li>oi</li>
+                </ul>
+            </div>
+        </div>
+        <div class="pesquisa">
+            <input type="text" name="" id="pesquisa-txt" placeholder="Pesquisa">
+            <button class="btn">
+                <i id="sim-pes" class="fas fa-search"></i>
+            </button>
+        </div>
+    </div>
+    <div id="body">
+
+        <div id="carros">
+            <div class="slide">
+                <div class="slides">
+                    <div id="atual" class="images">
+                        <img src="imagens/carossel-1.jpg" alt="carossel-1">
+                    </div>
+                    <div class="images">
+                        <img src="imagens/supermercado.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        function clica(){
+            var o =window.document.getElementById('lista')
+            var p = window.document.getElementById('hj')
+            var body = window.document.getElementById('body')
+            o.style.height=('100px')
+            p.style.display=('block')
+        }
+        function clica1(){
+            var i = window.document.getElementById('lista')
+            var p = window.document.getElementById('hj')
+            i.style.height=('0px')
+            p.style.display=('none')
+        }
+        
+            
+            
+    </script>
+</body>
+</html>
