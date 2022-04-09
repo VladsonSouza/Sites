@@ -67,7 +67,7 @@
     color: white;
     font-weight: bold;
     font-size: 22px;
-    cursor: pointer;
+
     padding: 2px;
 
 }
@@ -115,11 +115,10 @@ ul{
     align-items: center;
     justify-content: center;
     background-color: rgb(4, 21, 36);
-
 }
 
 .slide{
-    width: 1024px;
+    width: 1280px;
     height: 398px;
     overflow: hidden;
     border: 10px;
@@ -135,19 +134,47 @@ ul{
 }
 
 .images img{
-    width: 1024px;
+    width: 1280px;
     height: 398px;
+    transition: all 1s;
 
 }
 #atual{
     margin-left: 0px;
-    transition: all 2s;
+    transition: all 0.5s;
 }
 @media(max-width: 600px){
     .images img{
-        width: 400px;
+        width: 500px;
     }
     .slide{
-        width: 400px;
+        width: 500px;
     }
 }
+.bt{
+    background-color: white;
+    font-size: 30px;
+    color: #48b3e9;
+    position: absolute;
+    cursor: pointer;
+    height: 50px;
+    width: 20px;
+    align-items: center;
+    justify-content: center;
+    display: none;
+
+}
+#next{
+    left: 0;
+    border-radius: 0 50% 50% 0;
+    padding-right: 10px; 
+}
+#back{
+    right: 0px;
+    border-radius: 50% 0 0 50%;
+    padding-left: 10px;
+}
+#carros:hover .bt{
+    display: flex;
+}
+
