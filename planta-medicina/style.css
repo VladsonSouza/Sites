@@ -5,7 +5,6 @@
 #cabeça{
     display: flex;
     background-color: rgb(60, 160, 60);
-    width: 100%;
 }
 #logo{
     margin: auto;
@@ -35,6 +34,12 @@
 @media (min-width: 700px) { 
     #seçao {
         grid-template-columns: repeat(2 , 1fr);
+    }
+}
+@media (min-width: 500px) {
+    .planta {
+        width: 300px;
+        height: 400px;
     }
 }
 
