@@ -2,9 +2,16 @@
     margin: 0;
     padding: 0;
 }
+a{
+    text-decoration: none;
+    color: black;
+}
 #cabeça{
     display: flex;
     background-color: rgb(60, 160, 60);
+    font-family: sans-serif;
+    align-items: center;
+    justify-content: space-between;
 }
 #logo{
     margin-left: 2px;
@@ -14,11 +21,18 @@
     padding: 0 0 0 3px;
     border-radius: 1px 10px;
 }
-#menunav{
+#menu{
     display: flex;
-    align-items: center;
-    position: absolute;
-    right: 5%;
+    list-style: none;
+    gap: .5rem;
+    margin: 4px;
+}
+#menu a{
+    display: block;
+    padding: .5rem;
+}
+#menu a:hover{
+    background-color: rgba(5, 140, 40, 0.400);
 }
 #conteudo{
     display: flex;
