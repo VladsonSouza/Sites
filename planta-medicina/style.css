@@ -34,6 +34,9 @@ a{
 #menu a:hover{
     background-color: rgba(5, 140, 40, 0.400);
 }
+#btn-menu{
+
+}
 #conteudo{
     display: flex;
     width: 100%;
@@ -50,6 +53,13 @@ a{
     height: 500px;
     background-color: #000000;
     margin: 20px;
+    color: white;
+    font-family: sans-serif;
+}
+.planta img{
+    width: 200px;
+    height: 200px;
+    margin: 10px;
 }
 @media (min-width: 700px) { 
     #seçao {
@@ -66,13 +76,13 @@ a{
         height: 45px;
     }
 }
-@media (max-width: 400px){
+@media (max-width: 400px) {
     #img{
         width: 250px;
         height: 32px;
     }
-
 }
+
 
 
   
