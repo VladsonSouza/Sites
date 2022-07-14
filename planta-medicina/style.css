@@ -35,6 +35,10 @@ a{
     background-color: rgba(5, 140, 40, 0.400);
 }
 #btn-menu{
+    font-size: 30px;
+    border: none;
+    cursor: pointer;
+    background-color: green;
 
 }
 #conteudo{
@@ -65,6 +69,9 @@ a{
     #seçao {
         grid-template-columns: repeat(2 , 1fr);
     }
+    #btn-menu{
+        display: none;
+    }
 }
 @media (max-width: 650px)  {
     .planta {
@@ -75,14 +82,30 @@ a{
         width: 380px;
         height: 45px;
     }
+    #menu{
+        display: none;
+    }
 }
 @media (max-width: 400px) {
     #img{
         width: 250px;
         height: 32px;
     }
+    #menu{
+        display: none;
+    }
 }
 
+#text{
 
 
+}
+#img-1{
+
+
+}
+#title{
+
+
+}
   
